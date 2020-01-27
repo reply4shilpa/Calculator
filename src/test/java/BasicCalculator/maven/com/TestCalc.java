@@ -1,9 +1,8 @@
 package BasicCalculator.maven.com;
 
-import static org.junit.Assert.*;
+import static org.testng.Assert.assertEquals;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 public class TestCalc {
 	
@@ -11,8 +10,8 @@ public class TestCalc {
 	public void testSum() {
 		//BasicCalculator basicCalc = new BasicCalculator(5, 10); // instance of Constructor
 	    int subt=BasicCalculator.sub();
-	    Assert.assertNotNull(subt);
-	    Assert.assertTrue("any message", subt>=0);
+	   // Assert.assertNotNull(subt);
+	   assertEquals(0, subt);
 	    
 	  }
 
